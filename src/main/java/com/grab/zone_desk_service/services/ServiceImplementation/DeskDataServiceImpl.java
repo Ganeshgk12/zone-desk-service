@@ -42,6 +42,6 @@ public class DeskDataServiceImpl implements DeskDataService {
             deskRepository.save(existingDesk);
             return ResponseEntity.ok().body("Status changed to " + status);
         }
-        return ResponseEntity.badRequest().body("Something went wrong");
+        return ResponseEntity.badRequest().body("Something went wrong please try again.");
     }
 }
